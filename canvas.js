@@ -71,3 +71,12 @@ function orangeButton(){
                  Math.floor(Math.random()*300), Math.floor(Math.random()*300));
 
 }
+
+function clearCanvas(){
+  var canvas = document.getElementById("canvas");
+  var context = canvas.getContext('2d');
+  var size = {x: canvas.width, y: canvas.height };
+
+  context.clearRect(0,0,canvas.width, canvas.height);
+  drawBorder();
+}
